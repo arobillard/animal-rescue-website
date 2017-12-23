@@ -157,6 +157,10 @@ svg.img-flex {
   padding-top: 100%; /* Square */
 }
 
+.embed-1by2, .embed--1by2 {
+  padding-top: 200%; /* Vertical Rectangle */
+}
+
 .embed-4by3, .embed--4by3 {
   padding-top: 75%; /* Traditional TV/computer screens */
 }
@@ -1006,7 +1010,7 @@ select {
 
 /* stylelint-disable no-descending-specificity */
 
-button,
+/* button,
 .btn {
   cursor: pointer;
   display: inline-block;
@@ -1031,7 +1035,7 @@ button::-moz-focus-inner {
 }
 
 /* stylelint-enable */
-
+/*
 button:focus,
 button:hover,
 .btn:focus,
@@ -1074,6 +1078,74 @@ button[disabled] {
   background-color: #e2e2e2;
   border-color: #000;
   color: #000;
+}
+*/
+
+button,
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0;
+  overflow: visible;
+  padding: .25em 1.5em .2em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: linear-gradient(to right, #12ccb6, #12ccd2, #D19DD1);
+  border-radius: 10000px;
+  font-weight: 300;
+  border: none;
+  color: #fff;
+
+  text-decoration: none;
+  text-transform: none;
+}
+
+button:focus,
+button:hover,
+.btn:focus,
+.btn:hover {
+  background-color: #D19DD1;
+  background-image: none;
+  color: #fff;
+}
+
+button[disabled] {
+  cursor: default;
+}
+
+.btn-light, .btn--light {
+  background-color: #12ccd2;
+  background-image: none;
+  border-color: #12ccd2;
+  color: #fff;
+}
+
+.btn-light:focus,
+.btn-light:hover,
+.btn--light:focus,
+.btn--light:hover {
+  background-color: #D19DD1;
+  border-color: #D19DD1;
+  color: #fff;
+}
+
+.btn-ghost,
+.btn--ghost {
+  background-color: transparent;
+  background-image: none;
+  border: 3px solid #D19DD1;
+  color: #D19DD1;
+}
+
+.btn-ghost:focus,
+.btn-ghost:hover,
+.btn--ghost:focus,
+.btn--ghost:hover {
+  background-color: #D19DD1;
+  background-image: none;
+  border: 3px solid #D19DD1;
+  color: #fff;
 }
 
 .btn-link {
@@ -1126,7 +1198,7 @@ a:focus, [tabindex="0"]:focus {
   padding: .5em .75em;
   position: absolute;
   top: -10em;
-  z-index: 10000; /* To make sure they're always on top */
+  z-index: 10000000; /* To make sure they're always on top */
   background-color: #000;
   border: 0;
   color: #fff;
