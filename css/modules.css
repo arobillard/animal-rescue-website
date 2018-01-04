@@ -161,6 +161,10 @@ svg.img-flex {
   padding-top: 200%; /* Vertical Rectangle */
 }
 
+.embed-2by1, .embed--2by1 {
+  padding-top: 50%; /* Horizontal Rectangle */
+}
+
 .embed-4by3, .embed--4by3 {
   padding-top: 75%; /* Traditional TV/computer screens */
 }
