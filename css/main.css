@@ -16,12 +16,12 @@ html {
     text-shadow: none;
 }
 
-h1, h2, h4, legend {
+h1, h2, h4 {
   color: #12ccd2;
 }
 
-h3 {
-  color: #D19DD1;
+h3, legend {
+  font-weight: normal;
 }
 
 h4 {
@@ -40,6 +40,13 @@ a:hover {
 }
 
 /* ----- =Colors ----- */
+
+.text-000,
+.text-000-hov:hover,
+.text-000-hov:active,
+.text-000-hov:focus {
+  color: #000 !important;
+}
 
 .text-fff,
 .text-fff-hov:hover,
@@ -82,13 +89,13 @@ a:hover {
 .bg-turquoise-hov:focus {
   background-color: #12ccd2 !important;
 }
-/*
-.bg-turquoise-1-2,
-.bg-turquoise-1-2-hov:hover,
-.bg-turquoise-1-2-hov:active,
-.bg-turquoise-1-2-hov:focus {
-  background-color: rgba(18, 204, 210, 0.5) !important;
-} */
+
+.bg-lg,
+.bg-lg-hov:hover,
+.bg-lg-hov:active,
+.bg-lg-hov:focus {
+  background-color: #f2f2f2 !important;
+}
 
 .bg-333,
 .bg-333-hov:hover,
@@ -148,17 +155,28 @@ a:hover {
   transform: translateY(50%) translateX(-50%) rotate(-45deg);
 }
 
-input[type="checkbox"] + label::before {
+input[type="checkbox"].nav-check + label::before {
   position: absolute;
-  left: -1000rem;
+  right: -.4rem;
+  top: -.2rem;
+  background-color: transparent;
+  background-size: cover;
+  border: none;
+  z-index: 900000;
+  height: 2.4em;
+  width: 2.8em;
+}
+
+[type="checkbox"].nav-check:checked + label::before {
+  background-image: none;
 }
 
 .nav-label-back {
   width: 100%;
   position: fixed;
-  height: calc(100vh - 3.54875rem);
+  height: calc(100vh - 3.29875rem);
   left: -100vw;
-  top: 3.54875rem;
+  top: 3.29875rem;
   z-index: 95;
   background-color: rgba(0, 0, 0, 0,);
   transition: background-color .5s;
@@ -215,9 +233,9 @@ input[type="checkbox"] + label::before {
 nav {
   position: fixed;
   width: 66%;
-  height: calc(100vh - 3.54875rem);
+  height: calc(100vh - 3.29875rem);
   left: -100vw;
-  top: 3.54875rem;
+  top: 3.29875rem;
   background-color: rgba(18, 204, 210, .9);
   z-index: 100;
   overflow: hidden;
@@ -243,8 +261,8 @@ nav a {
   color: #fff;
   text-decoration: none;
   padding: .25rem 1.5rem .2rem;
-  font-size: 1.5625rem;
-  line-height: 2.275rem;
+  /* font-size: 1.5625rem;
+  line-height: 2.275rem; */
   border-radius: 10000px;
   border: none;
   transition:
@@ -264,8 +282,8 @@ nav a:focus {
 }
 
 .nav-same-page a {
-  font-size: 1rem;
-  line-height: 1.3rem;
+  /* font-size: 1rem;
+  line-height: 1.3rem; */
 }
 
 .nav-same-page li:last-child {
@@ -274,8 +292,8 @@ nav a:focus {
 }
 
 .nav-same-page li:last-child a {
-  font-size: 1.25rem;
-  line-height: 1.625rem;
+  /* font-size: 1.25rem;
+  line-height: 1.625rem; */
 }
 
 /* ----- =Main ----- */
@@ -293,6 +311,13 @@ nav a:focus {
   background:
     linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)) top left / cover no-repeat,
     url("../images/banner-adopt.jpg") center bottom / cover no-repeat;
+}
+
+.banner-rescues {
+  height: 75vh;
+  background:
+    linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)) top left / cover no-repeat,
+    url("../images/banner-rescues.jpg") center bottom / cover no-repeat;
 }
 
 .banner-content {
@@ -328,13 +353,15 @@ nav a:focus {
   height: 1.5rem;
 }
 
+
 .available-dog-label {
-  background-color: rgba(18, 204, 210, 0.5);
-  transition: background-color .25s;
+  background-color: rgba(209, 157, 209, 0.5);
+  transition: opacity .25s;
+  opacity: 0;
 }
 
 .unit:hover .available-dog-label {
-  background-color: rgba(209, 157, 209, 0.5);
+  opacity: 1;
 }
 
 .available-dogs-link {
@@ -355,10 +382,6 @@ form p.left {
 
 form div.right {
   width: calc(100% - .88456rem);
-}
-
-fieldset {
-  clear: both;
 }
 
 input,
@@ -419,8 +442,9 @@ select {
   border-radius: 10000px;
   padding: .325rem .65rem;
 }
-
-label.max-length-no-center {
+/*
+label.max-length-no-center,
+.disclaimers label {
   display: inline-block;
   vertical-align: bottom;
 }
@@ -431,14 +455,11 @@ label.max-length-no-center {
   vertical-align: bottom;
   width: 100%;
   max-width: 12.35rem;
-}
-/*
-option {
-  padding: 5rem;
 } */
 
 fieldset {
   border: none;
+  padding: 0;
 }
 
 /* ----- =Filter ----- */
@@ -460,17 +481,21 @@ fieldset {
 
 /* ----- =Footer ----- */
 
+.footer {
+  border-top: 1.5rem solid #222;
+}
+
 .nav-social {
   text-align: center;
 }
 
 .nav-social a {
-  color: #fff;
   border: none;
+  transition: color .25s;
 }
 
 .nav-social a:hover {
-  color: #12ccd2;
+  color: #D19DD1;
 }
 
 .nav-social .icon {
@@ -487,6 +512,11 @@ fieldset {
 }
 
 @media only screen and (min-width: 32em) {
+
+  .nav-check:checked ~ .nav-label-back {
+    display: none;
+  }
+
 /*
   .banner {
     background:
@@ -498,6 +528,12 @@ fieldset {
     background:
       linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .125), rgba(0, 0, 0, .5)) top left / cover no-repeat,
       url("../images/banner-adopt.jpg") center center / cover no-repeat;
+  }
+
+  .banner-rescues {
+    background:
+      linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .125), rgba(0, 0, 0, .5)) top left / cover no-repeat,
+      url("../images/banner-rescues.jpg") center center / cover no-repeat;
   }
 
   .banner-content {
@@ -537,13 +573,15 @@ fieldset {
   }
 
   .i-logo {
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
   }
 
   .h-logo .icon-label,
   .nav-label,
-  .nav-same-page {
+  .nav-same-page,
+  [type="checkbox"].nav-check + label::before,
+  [type="checkbox"].nav-check + label {
     display: none;
   }
 
@@ -566,8 +604,8 @@ fieldset {
 
   nav a {
     padding: .25rem 1.5rem .2rem;
-    font-size: 1.333rem;
-    line-height: 1.75rem;
+    /* font-size: 1.333rem;
+    line-height: 1.75rem; */
     border-radius: 10000px;
     border: none;
   }
@@ -576,6 +614,38 @@ fieldset {
 
   .about-us {
     background: url("../images/bone-bg.svg") 97% center / 12.5rem no-repeat;
+  }
+
+  .application {
+    background:
+      url("../images/bone-bg.svg") 90% 5% / 10rem no-repeat,
+      url("../images/paw-bg.svg") right center / 11rem no-repeat,
+      url("../images/logo-bg.svg") 95% 95% / 10rem no-repeat;
+  }
+
+  .success-content {
+    /* background: linear-gradient(to bottom, rgba(0, 0, 0, .5),  rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, .5)); */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .75),  rgba(0, 0, 0, 0)) top left / 100% 50% no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  .success-content p {
+    color: #fff;
+  }
+
+  .success-content-previews {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+
+  .m-hidden {
+    display: none;
   }
 
   /* ----- =Footer ----- */

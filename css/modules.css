@@ -1103,6 +1103,10 @@ button,
 
   text-decoration: none;
   text-transform: none;
+
+  transition:
+    color .25s,
+    background-color .25s;
 }
 
 button:focus,
@@ -1119,10 +1123,10 @@ button[disabled] {
 }
 
 .btn-light, .btn--light {
-  background-color: #12ccd2;
+  background-color: #fff;
   background-image: none;
-  border-color: #12ccd2;
-  color: #fff;
+  border-color: #fff;
+  color: #12ccd2;
 }
 
 .btn-light:focus,
