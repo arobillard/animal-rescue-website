@@ -246,6 +246,11 @@ svg.img-flex {
   vertical-align: middle;
 }
 
+.i-1rem {
+  width: 1rem;
+  height: 1rem;
+}
+
 .i-16, .i--16 {
   height: 16px;
   width: 16px;
@@ -1014,76 +1019,6 @@ select {
 
 /* stylelint-disable no-descending-specificity */
 
-/* button,
-.btn {
-  cursor: pointer;
-  display: inline-block;
-  margin: 0;
-  overflow: visible;
-  padding: .375em .75em .42em;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-color: #333;
-  border-radius: 4px;
-  border: 3px solid #333;
-  color: #fff;
-  font: inherit;
-  text-decoration: none;
-  text-transform: none;
-}
-
-button::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-
-/* stylelint-enable */
-/*
-button:focus,
-button:hover,
-.btn:focus,
-.btn:hover {
-  background-color: #000;
-  border-color: #000;
-  color: #fff;
-}
-
-button[disabled] {
-  cursor: default;
-}
-
-.btn-light, .btn--light {
-  background-color: #e2e2e2;
-  border-color: #e2e2e2;
-  color: #000;
-}
-
-.btn-light:focus,
-.btn-light:hover,
-.btn--light:focus,
-.btn--light:hover {
-  background-color: #666;
-  border-color: #666;
-  color: #fff;
-}
-
-.btn-ghost,
-.btn--ghost {
-  background-color: transparent;
-  border-color: #333;
-  color: #000;
-}
-
-.btn-ghost:focus,
-.btn-ghost:hover,
-.btn--ghost:focus,
-.btn--ghost:hover {
-  background-color: #e2e2e2;
-  border-color: #000;
-  color: #000;
-}
-*/
 
 button,
 .btn {
@@ -1091,11 +1026,11 @@ button,
   display: inline-block;
   margin: 0;
   overflow: visible;
-  padding: .25em 1.5em .2em;
+  padding: .375em 1em .42em;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-image: linear-gradient(to right, #12ccb6, #12ccd2, #D19DD1);
+  background-color: #12ccd2;
   border-radius: 10000px;
   font-weight: 300;
   border: none;
