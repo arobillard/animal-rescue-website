@@ -10,10 +10,8 @@
   <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700|Signika:300,400,700" rel="stylesheet">
 </head>
 <body>
-
   <ul class="skip-links">
     <li><a href="#main">Jump to main content</a></li>
     <li><a href="#nav">Jump to navigation</a></li>
@@ -22,13 +20,13 @@
   <header class="masthead">
     <div class="wrapper relative gutter pad-t-1-2 pad-b-1-2">
       <a class="icon-link h-logo" href="index.html">
-        <i class="icon i-logo">
+        <i class="icon i-logo l-push-r-1-2">
           <svg><use xlink:href="images/icons.svg#logo" /></svg>
         </i>
-        <span class="icon-label giga">Loyal Rescue</span>
+        <span class="icon-label giga exa">Loyal Rescue</span>
       </a>
       <input type="checkbox" id="nav-check" class="nav-check" aria-label="On mobile devices, press to open navigation.">
-      <label class="right nav-label" for="nav-check" tabindex="0">
+      <label class="right nav-label" for="nav-check" tabindex="-1">
         <span class="tog top"></span>
         <span class="tog middle"></span>
         <span class="tog bottom"></span>
@@ -36,244 +34,220 @@
       <label class="nav-label-back" for="nav-check"></label>
       <nav id="nav">
         <ul class="list-group push-0">
-          <li><a href="rescues.html">Rescues</a></li>
-          <li><a href="adopt.html">Adopt</a></li>
-          <li><a href="#">FAQ</a></li>
-        </ul>
-        <ul class="list-group nav-same-page">
-          <li><a href="#about-us">About Us</a></li>
-          <li><a href="#success-stories">Success Stories</a></li>
-          <li><a href="#available-dogs">Available Dogs</a></li>
-          <li><a class="bg-pink text-fff bg-fff-hov text-pink-hov" href="#donate">Donate</a></li>
+          <li><a class="mega current" href="rescues.html">Rescues</a></li>
+          <li><a class="mega" href="adopt.html">Adopt</a></li>
+          <li><a class="mega" href="#">FAQ</a></li>
+          <li><a class="mega bg-pink" href="#donate">Donate</a></li>
         </ul>
       </nav>
     </div>
+    <div class="hr"></div>
   </header>
 
-  <main class="">
-    <header class="banner banner-rescues">
-      <div class="banner-content">
-        <div class="wrapper island">
-          <h1 class="push-0">Available Dogs</h1>
-          <p class="giga">An amazing rescue dog is waiting for you!</p>
-          <!-- <div class="btn-container">
-            <a class="btn giga" href="#">Adopt Now</a>
-          </div> -->
+  <main id="main" role="main">
+    <header class="banner banner-rescues relative">
+      <div class="banner-content absolute pad-t-2 pad-b-2">
+        <div class="gutter wrapper">
+          <h1 class="yotta push-0">Available Dogs</h1>
+          <p class="giga text-fff">See the full list of available dogs at Loyal Rescue.</p>
         </div>
       </div>
     </header>
-    <div class="hr"></div>
-
-    <div class="pad-t-2 pad-b-2">
-      <div id="dog-list" class="dog-list wrapper">
-        <div class="grid island-1-2">
-          <div class="unit xs-1-2 s-1-2 m-1-4 l-1-4 island-1-2">
-            <div class="embed embed-1by1">
-              <img class="embed-item" src="images/list-buddy.jpg" alt="">
+    <section id="available-dogs" class="pad-t-2 pad-b-2 bg-lgrey">
+      <div class="pad-t-2 pad-b-2 wrapper">
+        <h2 class="gutter text-center"><span class="gutter pad-b-1-4 inline-block">Available Dogs</span></h2>
+        <div class="grid island-1-2 push">
+          <a href="rescues.html" class="unit [ xs-1 s-1 m-1 l-1-2 ]">
+            <div class="grid island-1-4">
+              <div class="unit [ xs-1 s-1-2 m-1-3 l-1-2 ] island-1-4">
+                <div class="embed embed-1by1">
+                  <img class="embed-item" src="images/preview-dexter.jpg" alt="">
+                </div>
+              </div>
+              <div class="unit [ xs-1 s-1-2 m-2-3 l-1-2 ] island-1-4">
+                <h3 class="push-0">Dexter</h3>
+                <p class="milli italic push-1-2">Black Lab</p>
+                <p class="push-0">Dexter is 8 year old black lab that is very smart and well trained.</p>
+              </div>
             </div>
-          </div>
-          <div class="unit xs-1-2 s-1-2 m-1-4 l-1-4 island-1-2">
-            <div class="embed embed-1by1">
-              <img class="embed-item" src="images/list-buddy.jpg" alt="">
+          </a>
+          <a href="rescues.html" class="unit [ xs-1 s-1 m-1 l-1-2 ]">
+            <div class="grid island-1-4">
+              <div class="unit [ xs-1 s-1-2 m-1-3 l-1-2 ] island-1-4">
+                <div class="embed embed-1by1">
+                  <img class="embed-item" src="images/preview-maya.jpg" alt="">
+                </div>
+              </div>
+              <div class="unit [ xs-1 s-1-2 m-2-3 l-1-2 ] island-1-4">
+                <h3 class="push-0">Maya</h3>
+                <p class="milli italic push-1-2">Golden Retriever</p>
+                <p class="push-0">Maya is a young, full of energy and is looking for someone to help train her.</p>
+              </div>
             </div>
-          </div>
-          <div class="unit xs-1-2 s-1-2 m-1-4 l-1-4 island-1-2">
-            <div class="embed embed-1by1">
-              <img class="embed-item" src="images/list-buddy.jpg" alt="">
+          </a>
+          <a href="rescues.html" class="unit [ xs-1 s-1 m-1 l-1-2 ]">
+            <div class="grid island-1-4">
+              <div class="unit [ xs-1 s-1-2 m-1-3 l-1-2 ] island-1-4">
+                <div class="embed embed-1by1">
+                  <img class="embed-item" src="images/preview-beth.jpg" alt="">
+                </div>
+              </div>
+              <div class="unit [ xs-1 s-1-2 m-2-3 l-1-2 ] island-1-4">
+                <h3 class="push-0">Beth</h3>
+                <p class="milli italic push-1-2">Husky</p>
+                <p class="push-0">Beth is a 4 year old husky that grew up on a farm and needs a home with lots of space.</p>
+              </div>
             </div>
-          </div>
-          <div class="unit xs-1-2 s-1-2 m-1-4 l-1-4 island-1-2">
-            <div class="embed embed-1by1">
-              <img class="embed-item" src="images/list-buddy.jpg" alt="">
+          </a>
+          <a href="rescues.html" class="unit [ xs-1 s-1 m-1 l-1-2 ]">
+            <div class="grid island-1-4">
+              <div class="unit [ xs-1 s-1-2 m-1-3 l-1-2 ] island-1-4">
+                <div class="embed embed-1by1">
+                  <img class="embed-item" src="images/preview-rascal.jpg" alt="">
+                </div>
+              </div>
+              <div class="unit [ xs-1 s-1-2 m-2-3 l-1-2 ] island-1-4">
+                <h3 class="push-0">Rascal</h3>
+                <p class="milli italic push-1-2">Chocolate Lab</p>
+                <p class="push-0">Rascal was recently rescued from a mill. Exact age unknown, but full of love!</p>
+              </div>
             </div>
-          </div>
-          <div class="unit xs-1-2 s-1-2 m-1-4 l-1-4 island-1-2">
-            <div class="embed embed-1by1">
-              <img class="embed-item" src="images/list-buddy.jpg" alt="">
+          </a>
+          <a href="rescues.html" class="unit [ xs-1 s-1 m-1 l-1-2 ]">
+            <div class="grid island-1-4">
+              <div class="unit [ xs-1 s-1-2 m-1-3 l-1-2 ] island-1-4">
+                <div class="embed embed-1by1">
+                  <img class="embed-item" src="images/preview-buddy.jpg" alt="">
+                </div>
+              </div>
+              <div class="unit [ xs-1 s-1-2 m-2-3 l-1-2 ] island-1-4">
+                <h3 class="push-0">Buddy</h3>
+                <p class="milli italic push-1-2">Golden Retriever</p>
+                <p class="push-0">Buddy is a 5 year old golden retriever that is full of energy, life, and spirit.</p>
+              </div>
             </div>
-          </div>
-          <div class="unit xs-1-2 s-1-2 m-1-4 l-1-4 island-1-2">
-            <div class="embed embed-1by1">
-              <img class="embed-item" src="images/list-buddy.jpg" alt="">
+          </a>
+          <a href="rescues.html" class="unit [ xs-1 s-1 m-1 l-1-2 ]">
+            <div class="grid island-1-4">
+              <div class="unit [ xs-1 s-1-2 m-1-3 l-1-2 ] island-1-4">
+                <div class="embed embed-1by1">
+                  <img class="embed-item" src="images/preview-douglas.jpg" alt="">
+                </div>
+              </div>
+              <div class="unit [ xs-1 s-1-2 m-2-3 l-1-2 ] island-1-4">
+                <h3 class="push-0">Douglas</h3>
+                <p class="milli italic push-1-2">Pug</p>
+                <p class="push-0">Douglas is a 3 year old pug that is a calm indoor dog, who loves attention.</p>
+              </div>
             </div>
-          </div>
-          <div class="unit xs-1-2 s-1-2 m-1-4 l-1-4 island-1-2">
-            <div class="embed embed-1by1">
-              <img class="embed-item" src="images/list-buddy.jpg" alt="">
+          </a>
+          <a href="rescues.html" class="unit [ xs-1 s-1 m-1 l-1-2 ]">
+            <div class="grid island-1-4">
+              <div class="unit [ xs-1 s-1-2 m-1-3 l-1-2 ] island-1-4">
+                <div class="embed embed-1by1">
+                  <img class="embed-item" src="images/preview-hudson.jpg" alt="">
+                </div>
+              </div>
+              <div class="unit [ xs-1 s-1-2 m-2-3 l-1-2 ] island-1-4">
+                <h3 class="push-0">Hudson</h3>
+                <p class="milli italic push-1-2">Husky</p>
+                <p class="push-0">Hudson is a 6 year old husky that is a retired sled dog. Well trained and great with kids.</p>
+              </div>
             </div>
-          </div>
-          <div class="unit xs-1-2 s-1-2 m-1-4 l-1-4 island-1-2">
-            <div class="embed embed-1by1">
-              <img class="embed-item" src="images/list-buddy.jpg" alt="">
+          </a>
+          <a href="rescues.html" class="unit [ xs-1 s-1 m-1 l-1-2 ]">
+            <div class="grid island-1-4">
+              <div class="unit [ xs-1 s-1-2 m-1-3 l-1-2 ] island-1-4">
+                <div class="embed embed-1by1">
+                  <img class="embed-item" src="images/preview-darren.jpg" alt="">
+                </div>
+              </div>
+              <div class="unit [ xs-1 s-1-2 m-2-3 l-1-2 ] island-1-4">
+                <h3 class="push-0">Darren</h3>
+                <p class="milli italic push-1-2">Dachshund</p>
+                <p class="push-0">Darren may be little but he is full of love and snuggles!</p>
+              </div>
             </div>
-          </div>
-          <div class="unit xs-1-2 s-1-2 m-1-4 l-1-4 island-1-2">
-            <div class="embed embed-1by1">
-              <img class="embed-item" src="images/list-buddy.jpg" alt="">
-            </div>
-          </div>
-          <div class="unit xs-1-2 s-1-2 m-1-4 l-1-4 island-1-2">
-            <div class="embed embed-1by1">
-              <img class="embed-item" src="images/list-buddy.jpg" alt="">
-            </div>
-          </div>
-          <div class="unit xs-1-2 s-1-2 m-1-4 l-1-4 island-1-2">
-            <div class="embed embed-1by1">
-              <img class="embed-item" src="images/list-buddy.jpg" alt="">
-            </div>
-          </div>
-          <div class="unit xs-1-2 s-1-2 m-1-4  island-1-2">
-            <div class="embed embed-1by1">
-              <img class="embed-item" src="images/list-buddy.jpg" alt="">
-            </div>
-          </div>
+          </a>
+        </div>
+        <div class="text-center">
+          <p class="giga bold sans push-0">Looking for a specific breed of dog?</p>
+          <p class="max-length">Email us at <a href="mailto:adoptions@loyalrescue.ca">adoptions@loyalrescue.ca</a> and let us a know what type of dog you are looking for. We will put you on a short list of contacts when matching dog comes to our shelter.</p>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="bg-turquoise text-fff pad-t-2 pad-b-2">
+    <article class="bg-turquoise text-fff pad-t-2 pad-b-2">
       <div id="donate" class="donate pad-t-2 pad-b-2 wrapper">
+        <h2 class="text-fff text-center"><span class="gutter pad-b-1-4 inline-block">Donate</span></h2>
         <div class="gutter">
-          <h2 class="text-fff">Donate</h2>
-          <p class="max-length-no-center">Loyal Rescue relies heavily on donations from the community to keep rescuing animals and finding the perfect new homes for them. We would appreciate any support you can give to help us continue to do our work.</p>
+          <p class="max-length text-center push-2">Loyal Rescue relies heavily on donations from the community to keep rescuing animals. We would appreciate any support you can give!</p>
         </div>
         <form method="post" action="//formspree.io/robi0653@algonquinlive.com">
-          <fieldset class="push-0">
-            <legend class="tera gutter push-1-2">Basic Information</legend>
-            <div class="grid gutter-1-2">
-              <div class="unit xs-1 s-1 m-1-3 l-1-3 gutter-1-2 push">
-                <label for="name">Full Name</label>
-                <input class="text-000" type="text" id="name" placeholder="Your Name" required>
+          <div class="grid">
+            <fieldset class="unit [ xs-1 s-1 m-1-2 l-1 ] push-0">
+              <legend class="giga gutter push-1-2">Basic Information</legend>
+              <div class="grid gutter-1-2">
+                <div class="unit [ xs-1 s-1 m-1 l-1-3 ] gutter-1-2 push">
+                  <label for="name">Full Name</label>
+                  <input class="text-000" type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="unit [ xs-1 s-1 m-1 l-1-3 ] gutter-1-2 push">
+                  <label for="email">Email address</label>
+                  <input class="text-000" type="email" id="email" placeholder="youremail@email.com" required>
+                </div>
+                <div class="unit [ xs-1 s-1 m-1 l-1-3 ] gutter-1-2 push">
+                  <label for="amount">Amount</label>
+                  <input class="text-000" type="number" id="amount" min="0" placeholder="$100.00" required>
+                </div>
               </div>
-              <div class="unit xs-1 s-1 m-1-3 l-1-3 gutter-1-2 push">
-                <label for="email">Email address</label>
-                <input class="text-000" type="email" id="email" placeholder="youremail@email.com" required>
+            </fieldset>
+            <fieldset class="unit [ xs-1 s-1 m-1-2 l-1 ] push-0">
+              <legend class="giga gutter push-1-2">Donation Type</legend>
+              <div class="grid gutter-1-2">
+                <div class="unit [ xs-1 s-1 m-1 l-1-3 ] gutter-1-2 push">
+                  <input type="radio" id="monthly-donation" name="donation-type" checked>
+                  <label for="monthly-donation">Monthly Donation</label>
+                </div>
+                <div class="unit [ xs-1 s-1 m-1 l-1-3 ] gutter-1-2 push">
+                  <input type="radio" id="yearly-donation" name="donation-type">
+                  <label for="yearly-donation">Yearly Donation</label>
+                </div>
+                <div class="unit [ xs-1 s-1 m-1 l-1-3 ] gutter-1-2 push">
+                  <input type="radio" id="single-donation" name="donation-type">
+                  <label for="single-donation">Single Donation</label>
+                </div>
               </div>
-              <div class="unit xs-1 s-1 m-1-3 l-1-3 gutter-1-2 push">
-                <label for="amount">Amount</label>
-                <input class="text-000" type="number" id="amount" min="0" placeholder="$100.00" required>
-              </div>
-            </div>
-          </fieldset>
-          <!-- <label for="name">Full Name</label>
-          <input type="text" id="name" placeholder="Your Name" required>
-          <label for="email">Email address</label>
-          <input type="email" id="email" placeholder="youremail@email.com" required>
-          <label for="amount">Amount</label>
-          <p class="push-0 left push-r-1-4">$</p>
-          <div class="right">
-            <input type="number" id="amount" placeholder="100.00" required>
-          </div> -->
-          <fieldset>
-            <legend class="tera gutter push-1-2">Donation Type</legend>
-            <div class="grid gutter-1-2">
-              <div class="unit xs-1 s-1 m-1-3 l-1-3 gutter-1-2 push">
-                <input type="radio" id="monthly-donation" name="donation-type" checked>
-                <label for="monthly-donation">Monthly Donation</label>
-              </div>
-              <div class="unit xs-1 s-1 m-1-3 l-1-3 gutter-1-2 push">
-                <input type="radio" id="yearly-donation" name="donation-type">
-                <label for="yearly-donation">Yearly Donation</label>
-              </div>
-              <div class="unit xs-1 s-1 m-1-3 l-1-3 gutter-1-2 push">
-                <input type="radio" id="single-donation" name="donation-type">
-                <label for="single-donation">Single Donation</label>
-              </div>
-            </div>
-          </fieldset>
+            </fieldset>
+          </div>
           <div class="gutter">
-            <button class="btn-light mega" type="submit">Donate</button>
+            <button class="btn btn-light mega" type="submit">Donate</button>
           </div>
         </form>
       </div>
-    </div>
-
-    <div class="wrapper dogs-available gutter-1-4 pad-b-2 pad-t-2">
-  <p>Filters</p>
-  <input class="gutter-1-4 push push-r" id="all-dogs" type="radio" name="filters" checked>
-  <label class="gutter-1-4 push push-r" for="all-dogs">All</label>
-  <input class="gutter-1-4 golden-retriever push push-r" id="golden-retriever" type="radio" name="filters">
-  <label class="gutter-1-4 push push-r" for="golden-retriever">Golden Retrievers</label>
-  <input class="gutter-1-4 pugs push push-r" id="pugs" type="radio" name="filters">
-  <label class="gutter-1-4 push push-r" for="pugs">Pugs</label>
-  <input class="gutter-1-4 terrier push push-r" id="terrier" type="radio" name="filters">
-  <label class="gutter-1-4 push push-r" for="terrier">Terrier</label>
-  <div class="grid pad-t-1-4 pad-b-1-4 dog-list">
-    <div class="golden-retriever-link unit xs-1 s-1 m-1-2 l-1-2 island-1-4">
-      <div class="w-1-2 left push-r">
-        <div class="embed embed-1by1 bg-pink">
-          <p class="embed-item">Retriever 1</p>
-        </div>
-      </div>
-      <p>Hello there</p>
-    </div>
-    <div class="pugs-link unit xs-1 s-1 m-1-2 l-1-2 island-1-4">
-      <div class="w-1-2 left push-r">
-        <div class="embed embed-1by1 bg-pink">
-          <p class="embed-item">Pug 1</p>
-        </div>
-      </div>
-      <p>Hello there</p>
-    </div>
-    <div class="golden-retriever-link unit xs-1 s-1 m-1-2 l-1-2 island-1-4">
-      <div class="w-1-2 left push-r">
-        <div class="embed embed-1by1 bg-pink">
-          <p class="embed-item">Retriever 2</p>
-        </div>
-      </div>
-      <p>Hello there</p>
-    </div>
-    <div class="golden-retriever-link unit xs-1 s-1 m-1-2 l-1-2 island-1-4">
-      <div class="w-1-2 left push-r">
-        <div class="embed embed-1by1 bg-pink">
-          <p class="embed-item">Retriever 3</p>
-        </div>
-      </div>
-      <p>Hello there</p>
-    </div>
-    <div class="terrier-link unit xs-1 s-1 m-1-2 l-1-2 island-1-4">
-      <div class="w-1-2 left push-r">
-        <div class="embed embed-1by1 bg-pink">
-          <p class="embed-item">Retriever 1</p>
-        </div>
-      </div>
-      <p>Hello there</p>
-    </div>
-    <div class="pugs-link unit xs-1 s-1 m-1-2 l-1-2 island-1-4">
-      <div class="w-1-2 left push-r">
-        <div class="embed embed-1by1 bg-pink">
-          <p class="embed-item">Pug 2</p>
-        </div>
-      </div>
-      <p>Hello there</p>
-    </div>
-  </div>
-</div>
-
+    </article>
 
   </main>
 
-
-  <!-- <div class="hr hr-thick"></div> -->
-  <footer class="footer bg-333 pad-t-2 pad-b-2">
-    <div class="grid wrapper gutter">
-      <div class="unit unit-push-m-1-2 xs-1 s-1 m-1-2 l-1-2">
+  <footer class="footer bg-dgrey pad-t-2 pad-b-2">
+    <div class="grid wrapper">
+      <div class="unit unit-push-m-1-2 [ xs-1 s-1 m-1-2 l-1-2 ] push">
         <ul class="list-group-inline nav-social">
-          <li class="gutter push">
+          <li class="gutter">
             <a class="icon-link" href="#logo">
               <i class="icon">
                 <svg><use xlink:href="images/icons.svg#facebook" /></svg>
               </i>
             </a>
           </li>
-          <li class="gutter push">
+          <li class="gutter">
             <a class="icon-link" href="#logo">
               <i class="icon">
                 <svg><use xlink:href="images/icons.svg#instagram" /></svg>
               </i>
             </a>
           </li>
-          <li class="gutter push">
+          <li class="gutter">
             <a class="icon-link" href="#logo">
               <i class="icon">
                 <svg><use xlink:href="images/icons.svg#twitter" /></svg>
@@ -282,28 +256,16 @@
           </li>
         </ul>
       </div>
-      <div class="unit unit-pull-m-1-2 xs-1 s-1 m-1-2 l-1-2">
-        <div class="grid">
-          <div class="unit xs-1-2 s-1-2 m-1-2 l-1-2">
-            <p class="text-fff push-1-2 mega">Explore</p>
-            <ul class="list-group">
-              <li class="push-1-4"><a href="#">Rescues</a></li>
-              <li class="push-1-4"><a href="#">Adopt</a></li>
-              <li class="push-1-4"><a href="#">FAQ</a></li>
-            </ul>
-          </div>
-          <!-- <div class="unit xs-1-2 s-1-2 m-1-2 l-1-2">
-            <p class="text-fff push-1-2 mega">Learn More</p>
-            <ul class="list-group">
-              <li class="push-1-4"><a href="#about-us">About Us</a></li>
-              <li class="push-1-4"><a href="#success-stories">Success Stories</a></li>
-              <li class="push-1-4"><a href="#available-dogs">Available Dogs</a></li>
-              <li class="push-1-4"><a href="#donate">Donate</a></li>
-            </ul>
-          </div> -->
-        </div>
+      <div class="unit unit-pull-m-1-2 [ xs-1 s-1 m-1-2 l-1-2 ] gutter">
+        <p class="text-fff push-1-2 giga sans bold">Explore</p>
+        <ul class="list-group">
+          <li class="push-1-4"><a href="rescues.html">Rescues</a></li>
+          <li class="push-1-4"><a href="adopt.html">Adopt</a></li>
+          <li class="push-1-4"><a href="#">FAQ</a></li>
+        </ul>
       </div>
     </div>
+    <p class="copyright push-0 text-align island"><small class="micro text-lgrey">Copyright © 2018 Adam Robillard All Rights Reserved.</small></p>
   </footer>
 
 </body>
