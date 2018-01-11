@@ -1019,7 +1019,6 @@ select {
 
 /* stylelint-disable no-descending-specificity */
 
-
 button,
 .btn {
   cursor: pointer;
@@ -1030,7 +1029,7 @@ button,
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-color: #12ccd2;
+  background-color: #0097a2;
   border-radius: 10000px;
   font-weight: 300;
   border: none;
@@ -1048,8 +1047,7 @@ button:focus,
 button:hover,
 .btn:focus,
 .btn:hover {
-  background-color: #D19DD1;
-  background-image: none;
+  background-color: #d19dd1;
   color: #fff;
 }
 
@@ -1058,36 +1056,33 @@ button[disabled] {
 }
 
 .btn-light, .btn--light {
-  background-color: #fff;
-  background-image: none;
-  border-color: #fff;
-  color: #12ccd2;
+  background-color: #d19dd1;
+  color: #333;
 }
 
 .btn-light:focus,
 .btn-light:hover,
 .btn--light:focus,
 .btn--light:hover {
-  background-color: #D19DD1;
-  border-color: #D19DD1;
-  color: #fff;
+  background-color: #fff;
+  color: #333;
 }
 
 .btn-ghost,
 .btn--ghost {
   background-color: transparent;
   background-image: none;
-  border: 3px solid #D19DD1;
-  color: #D19DD1;
+  border: 3px solid #d19dd1;
+  color: #d19dd1;
 }
 
 .btn-ghost:focus,
 .btn-ghost:hover,
 .btn--ghost:focus,
 .btn--ghost:hover {
-  background-color: #D19DD1;
+  background-color: #d19dd1;
   background-image: none;
-  border: 3px solid #D19DD1;
+  border: 3px solid #d19dd1;
   color: #fff;
 }
 
@@ -1314,4 +1309,5 @@ a:focus, [tabindex="0"]:focus {
   }
 
   /* End HTML5 Boilerplate code */
+
 }
