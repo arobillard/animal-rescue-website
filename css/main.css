@@ -27,6 +27,11 @@ a:active {
   border-color: rgba(209, 157, 209, 1);
 }
 
+.masthead a:focus,
+.banner a:focus {
+  outline: 3px solid #fff;
+}
+
 .skip-links a,
 .skip-links button {
   color: #fff;
