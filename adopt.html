@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>Loyal Rescue - Adopt</title>
+  <link href="favicon.ico" rel="shortcut icon">
+  <link rel="apple-touch-icon" href="/favicon-196.png">
   <meta name="handheldfriendly" content="true">
   <meta name="mobileoptimized" content="240">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -17,9 +19,9 @@
     <li><a href="#nav">Jump to navigation</a></li>
   </ul>
 
-  <header class="masthead">
+  <header class="masthead" role="banner">
     <div class="wrapper relative gutter pad-t-1-2 pad-b-1-2">
-      <a class="icon-link h-logo" href="index.html">
+      <a class="icon-link h-logo bold" href="index.html">
         <i class="icon i-logo l-push-r-1-2">
           <svg><use xlink:href="images/icons.svg#logo" /></svg>
         </i>
@@ -31,20 +33,18 @@
         <span class="tog middle"></span>
         <span class="tog bottom"></span>
       </label>
-      <label class="nav-label-back" for="nav-check"></label>
-      <nav id="nav">
-        <ul class="list-group push-0">
+      <nav id="nav" role="navigation">
+        <ul class="list-group push-0 pad-t pad-b gutter-1-2">
           <li><a class="mega" href="rescues.html">Rescues</a></li>
           <li><a class="mega current" href="adopt.html">Adopt</a></li>
-          <li><a class="mega" href="#">FAQ</a></li>
-          <li><a class="mega bg-pink" href="#donate">Donate</a></li>
+          <li><a class="mega btn-light" href="#donate">Donate</a></li>
         </ul>
       </nav>
     </div>
     <div class="hr"></div>
   </header>
 
-  <main id="main" role="main">
+  <main id="main" role="main" tabindex="0">
     <header class="banner banner-adopt relative">
       <div class="banner-content absolute pad-t-2 pad-b-2">
         <div class="gutter wrapper">
@@ -53,7 +53,7 @@
         </div>
       </div>
     </header>
-    <div class="application wrapper pad-t-2 pad-b-2 gutter">
+    <section class="application wrapper pad-t-2 pad-b-2 gutter" tabindex="0">
       <h2 class="text-center"><span class="gutter pad-b-1-4 inline-block">Adoption Application</span></h2>
       <div class="max-length">
         <p>Please be aware that our application form is quite extensive and it may take you 20 minutes or more to complete it.</p>
@@ -62,97 +62,18 @@
         <p>If you have had pets in the past but do not currently have any, your most recent Veterinarian information is required. If you have never owned a pet before then one additional personal reference is required instead.</p>
         <p>If you have all of the required information and are ready to proceed to the application form, please continue below.</p>
       </div>
+    </section>
+    <div class="embed embed-2by1">
+      <img class="embed-item" src="images/banner-application.jpg" alt="A photo of a baby and a dog">
     </div>
-    <div class="wrapper"><div class="gutter"><div class="hr hr-thin"></div></div></div>
-    <section id="application-form" class="wrapper pad-t-2 pad-b-2 gutter-1-2">
+    <section id="application-form" class="wrapper pad-t-2 pad-b-2 gutter-1-2" tabindex="0">
       <form method="post" action="//formspree.io/robi0653@algonquinlive.com">
-        <fieldset class="disclaimers">
-          <legend class="tera gutter-1-2">Adoption Disclaimers</legend>
-          <div class="grid grid-bottom">
-            <div class="unit xs-1 s-1 m-2-3 l-2-3 island-1-2">
-              <label class="push-1-2" for="adopt-dog-name">Name of the dog on the LOYAL Rescue website</label>
-            </div>
-            <div class="unit xs-1 s-1 m-1-3 l-1-3 island-1-2">
-              <input class="push-1-2" id="adopt-dog-name" name="adopt-dog-name">
-            </div>
-
-            <div class="unit xs-1 s-1 m-2-3 l-2-3 island-1-2">
-              <label class="max-length-no-center push-1-2" for="adopt-disclaimer-1">I understand that this application form is not a guarantee that the dog I have applied for will still be available if my application to adopt a dog is approved, as there could be several applications for this dog already in progress or the dog may have a requirement that my home does not provide.</label>
-            </div>
-            <div class="unit xs-1 s-1 m-1-3 l-1-3 island-1-2">
-              <select class="push-1-2" id="adopt-disclaimer-1" name="adopt-disclaimer-1" required>
-                <option>&nbsp;</option>
-                <option>I understand and accept.</option>
-              </select>
-            </div>
-
-            <div class="unit xs-1 s-1 m-2-3 l-2-3 island-1-2">
-              <label class="max-length-no-center push-1-2" for="adopt-disclaimer-2">I understand that LOYAL Rescue does not approve their dogs to applicants on a "first come first serve" basis, it is the best interest of the dog that is considered in the event of multiple applications for the same dog and the home best suited to the specific needs of the dog will be selected.</label>
-            </div>
-            <div class="unit xs-1 s-1 m-1-3 l-1-3 island-1-2">
-              <select class="push-1-2" id="adopt-disclaimer-2" name="adopt-disclaimer-2" required>
-                <option>&nbsp;</option>
-                <option>I understand and accept.</option>
-              </select>
-            </div>
-
-            <div class="unit xs-1 s-1 m-2-3 l-2-3 island-1-2">
-              <label class="max-length-no-center push-1-2" for="adopt-disclaimer-3">In the event that the dog I have applied for is approved to another adopter before my application is processed I will select another dog from the LOYAL Rescue website and continue with my application screening.</label>
-            </div>
-            <div class="unit xs-1 s-1 m-1-3 l-1-3 island-1-2">
-              <select class="push-1-2" id="adopt-disclaimer-3" name="adopt-disclaimer-3" required>
-                <option>&nbsp;</option>
-                <option>I understand and accept.</option>
-              </select>
-            </div>
-
-            <div class="unit xs-1 s-1 m-2-3 l-2-3 island-1-2">
-              <label class="max-length-no-center push-1-2" for="adopt-disclaimer-4">I understand and accept that virtually all "rescued" dogs will have behavioral issues of varying degrees. Many of these dogs have been abused or neglected and have a tendency to be more timid and/or defensive than a dog raised from birth by a knowledgeable and responsible dog owner. I understand and accept that while all known behavioral issues will be disclosed prior to the adoption being completed, it is entirely possible that minor or major behavioral issues may arise after the adoption has occurred and the dog is in my home. I am not expecting a pre-trained dog and am willing to work with this dog to help it overcome any issues it may have, or develops while under my care.</label>
-            </div>
-            <div class="unit xs-1 s-1 m-1-3 l-1-3 island-1-2">
-              <select class="push-1-2" id="adopt-disclaimer-4" name="adopt-disclaimer-4" required>
-                <option>&nbsp;</option>
-                <option>I understand and accept.</option>
-              </select>
-            </div>
-
-            <div class="unit xs-1 s-1 m-2-3 l-2-3 island-1-2">
-              <label class="max-length-no-center push-1-2" for="adopt-disclaimer-5">I understand and accept that although all LOYAL Rescue dogs have been evaluated by a veterinarian, and that a copy of the veterinarian's report(s) will be provided at the time of adoption, it is possible that the dog may have minor or major medical issues that are undiagnosed. I understand and accept that the approximate age of the dog is estimated by a veterinarian and may be slightly or significantly inaccurate.</label>
-            </div>
-            <div class="unit xs-1 s-1 m-1-3 l-1-3 island-1-2">
-              <select class="push-1-2" id="adopt-disclaimer-5" name="adopt-disclaimer-5" required>
-                <option>&nbsp;</option>
-                <option>I understand and accept.</option>
-              </select>
-            </div>
-
-            <div class="unit xs-1 s-1 m-2-3 l-2-3 island-1-2">
-              <label class="max-length-no-center push-1-2" for="adopt-disclaimer-6">I have verfied that this dog is being fostered in a location close enough for me to personally travel to, in order to adopt this dog, should I be the approved adopter.</label>
-            </div>
-            <div class="unit xs-1 s-1 m-1-3 l-1-3 island-1-2">
-              <select class="push-1-2" id="adopt-disclaimer-6" name="adopt-disclaimer-6" required>
-                <option>&nbsp;</option>
-                <option>I understand and accept.</option>
-              </select>
-            </div>
-
-            <div class="unit xs-1 s-1 m-2-3 l-2-3 island-1-2">
-              <label class="max-length-no-center push-1-2" for="adopt-disclaimer-7">I have thoroughly read and understand the information in the FAQ section of the LOYAL Rescue website.</label>
-            </div>
-            <div class="unit xs-1 s-1 m-1-3 l-1-3 island-1-2">
-              <select class="push-1-2" id="adopt-disclaimer-7" name="adopt-disclaimer-7" required>
-                <option>&nbsp;</option>
-                <option>I understand and accept.</option>
-              </select>
-            </div>
-          </div>
-        </fieldset>
         <fieldset>
           <legend class="tera gutter-1-2">Basic Information</legend>
           <div class="grid">
             <div class="unit xs-1 s-1 m-1-2 l-1-2 island-1-2">
               <label class="push-1-2" for="adopt-your-name">First & Last Name:</label>
-              <input id="adopt-your-name" name="adopt-your-name">
+              <input id="adopt-your-name" name="adopt-your-name" required>
             </div>
             <div class="unit xs-1 s-1 m-1-2 l-1-2 island-1-2">
               <label class="push-1-2" for="adopt-your-age">Your Age:</label>
@@ -176,7 +97,7 @@
             </div>
             <div class="unit xs-1 s-1 m-1-2 l-1-2 island-1-2">
               <label class="push-1-2" for="adopt-province">Prov/State:</label>
-              <select id="adopt-province" name="adopt-province" required>
+              <select id="adopt-province" name="adopt-province">
                 <option>Alberta</option>
                 <option>British Columbia</option>
                 <option>Manitoba</option>
@@ -210,7 +131,7 @@
             </div>
             <div class="unit xs-1 s-1 m-1-2 l-1-2 island-1-2">
               <label class="push-1-2" for="adopt-primary-phone-type">Primary Phone Type:</label>
-              <select id="adopt-primary-phone-type" name="adopt-primary-phone-type" required>
+              <select id="adopt-primary-phone-type" name="adopt-primary-phone-type">
                 <option>Mobile</option>
                 <option>Home</option>
                 <option>Work</option>
@@ -221,8 +142,8 @@
               <input type="tel" id="adopt-alt-phone" name="adopt-alt-phone">
             </div>
             <div class="unit xs-1 s-1 m-1-2 l-1-2 island-1-2">
-              <label class="push-1-2" for="adopt-alt-phone-type">Type:</label>
-              <select id="adopt-alt-phone-type" name="adopt-alt-phone-type" required>
+              <label class="push-1-2" for="adopt-alt-phone-type">Alternative Phone Type:</label>
+              <select id="adopt-alt-phone-type" name="adopt-alt-phone-type">
                 <option>Mobile</option>
                 <option selected>Home</option>
                 <option>Work</option>
@@ -233,9 +154,9 @@
               <input id="adopt-call-time" name="adopt-call-time">
             </div>
             <div class="unit xs-1 s-1 m-1-2 l-1-2 island-1-2">
-              <label class="push-1-2" for="">Can we call you at work?</label>
-              <select id="adopt-alt-phone-type" name="adopt-alt-phone-type" required>
-                <option>&nbsp;</option>
+              <label class="push-1-2" for="adopt-call-at-work">Can we call you at work?</label>
+              <select id="adopt-call-at-work" name="adopt-call-at-work">
+                <option value="">Select</option>
                 <option>Yes</option>
                 <option>No</option>
               </select>
@@ -278,8 +199,8 @@
             </div>
             <div class="unit xs-1 s-1 m-1-2 l-1-2 island-1-2">
               <label class="push-1-2" for="adopt-child-gender">Gender:</label>
-              <select id="adopt-child-gender" name="adopt-child-gender" required>
-                <option>&nbsp;</option>
+              <select id="adopt-child-gender" name="adopt-child-gender">
+                <option>Select</option>
                 <option>Female</option>
                 <option>Male</option>
                 <option>Other</option>
@@ -303,15 +224,20 @@
             </div>
           </div>
         </fieldset>
-        <p class="max-length text-center gutter-1-2"><small>By submitting this form, you are confirming that all the above information is true and agree to all of the Loyal Rescue's <a href="#">Terms and Conditions</a> for applying to adopt a dog.</small></p>
+        <p class="max-length text-center gutter-1-2"><small>By submitting this form, you are confirming that all the above information is true and agree to all of the Loyal Rescue's <a href="legal.html">Terms and Conditions</a> for applying to adopt a dog.</small></p>
         <div class="gutter-1-2 text-center">
           <button class="btn mega" type="submit">Submit Application</button>
         </div>
       </form>
     </section>
-    <article class="bg-turquoise text-fff pad-t-2 pad-b-2">
+    <div class="wrapper">
+      <div class="gutter">
+        <div class="hr hr-thin"></div>
+      </div>
+    </div>
+    <article class="pad-t-2 pad-b-2">
       <div id="donate" class="donate pad-t-2 pad-b-2 wrapper">
-        <h2 class="text-fff text-center"><span class="gutter pad-b-1-4 inline-block">Donate</span></h2>
+        <h2 class="text-center"><span class="gutter pad-b-1-4 inline-block">Donate</span></h2>
         <div class="gutter">
           <p class="max-length text-center push-2">Loyal Rescue relies heavily on donations from the community to keep rescuing animals. We would appreciate any support you can give!</p>
         </div>
@@ -322,15 +248,15 @@
               <div class="grid gutter-1-2">
                 <div class="unit [ xs-1 s-1 m-1 l-1-3 ] gutter-1-2 push">
                   <label for="name">Full Name</label>
-                  <input class="text-000" type="text" id="name" placeholder="Your Name" required>
+                  <input class="text-000" type="text" id="name" name="name">
                 </div>
                 <div class="unit [ xs-1 s-1 m-1 l-1-3 ] gutter-1-2 push">
                   <label for="email">Email address</label>
-                  <input class="text-000" type="email" id="email" placeholder="youremail@email.com" required>
+                  <input class="text-000" type="email" id="email" name="email">
                 </div>
                 <div class="unit [ xs-1 s-1 m-1 l-1-3 ] gutter-1-2 push">
                   <label for="amount">Amount</label>
-                  <input class="text-000" type="number" id="amount" min="0" placeholder="$100.00" required>
+                  <input class="text-000" type="number" id="amount" name="amount" min="0" required>
                 </div>
               </div>
             </fieldset>
@@ -352,36 +278,39 @@
               </div>
             </fieldset>
           </div>
-          <div class="gutter">
-            <button class="btn btn-light mega" type="submit">Donate</button>
+          <p class="gutter text-center">Thank you for your support, it is greatly appreciated!</p>
+          <div class="gutter text-center">
+            <button class="btn mega" type="submit">Donate</button>
           </div>
         </form>
       </div>
     </article>
   </main>
-
-  <footer class="footer bg-dgrey pad-t-2 pad-b-2">
+  <footer class="footer bg-dgrey pad-t-2 pad-b-2" role="contentinfo">
     <div class="grid wrapper">
       <div class="unit unit-push-m-1-2 [ xs-1 s-1 m-1-2 l-1-2 ] push">
         <ul class="list-group-inline nav-social">
           <li class="gutter">
-            <a class="icon-link" href="#logo">
+            <a class="icon-link" href="#social">
               <i class="icon">
                 <svg><use xlink:href="images/icons.svg#facebook" /></svg>
+                <span class="icon-label milli not-italic sans">Facebook</span>
               </i>
             </a>
           </li>
           <li class="gutter">
-            <a class="icon-link" href="#logo">
+            <a class="icon-link" href="#social">
               <i class="icon">
                 <svg><use xlink:href="images/icons.svg#instagram" /></svg>
+                <span class="icon-label milli not-italic sans">Instagram</span>
               </i>
             </a>
           </li>
           <li class="gutter">
-            <a class="icon-link" href="#logo">
+            <a class="icon-link" href="#social">
               <i class="icon">
                 <svg><use xlink:href="images/icons.svg#twitter" /></svg>
+                <span class="icon-label milli not-italic sans">Twitter</span>
               </i>
             </a>
           </li>
@@ -390,9 +319,9 @@
       <div class="unit unit-pull-m-1-2 [ xs-1 s-1 m-1-2 l-1-2 ] gutter">
         <p class="text-fff push-1-2 giga sans bold">Explore</p>
         <ul class="list-group">
-          <li class="push-1-4"><a href="rescues.html">Rescues</a></li>
-          <li class="push-1-4"><a href="adopt.html">Adopt</a></li>
-          <li class="push-1-4"><a href="#">FAQ</a></li>
+          <li class="push-1-4"><a class="text-fff border-fff-1-2" href="rescues.html">Rescues</a></li>
+          <li class="push-1-4"><a class="text-fff border-fff-1-2" href="adopt.html">Adopt</a></li>
+          <li class="push-1-4"><a class="text-fff border-fff-1-2" href="#donate">Donate</a></li>
         </ul>
       </div>
     </div>
